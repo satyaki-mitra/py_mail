@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-    name='py_mail',
+    name='py_mailer',
     version='1.0.0',
     author='Satyaki Mitra',
     zip_safe=False, 
