@@ -9,7 +9,7 @@ setuptools.setup(
     description='An E-Mail sender module written in python',
     long_description=open("README.md", "r").read(),
     long_description_content_type="text/markdown",
-    url='https://github.com/satyaki-mitra/py_mail',
+    #url='https://github.com/satyaki-mitra/py_mail',
     packages=setuptools.find_packages(),
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
