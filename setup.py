@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-    name='PyMailer',
+    name='pymail',
     version='1.0.0',
     author='Satyaki Mitra',
     zip_safe=False, 
@@ -17,7 +17,5 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent"
     ],
-    scripts = [
-        "mailer.py"
-    ],
+    scripts = ["mailer.py"],
 )

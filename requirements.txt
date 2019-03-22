@@ -1,0 +1,7 @@
+json
+pickle
+socket
+smtplib
+dnspython
+email
+
