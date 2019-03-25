@@ -190,12 +190,13 @@ class Compressor(object):
         try:
             self.logger.info('The file : %r is larger than 25MB. \
                         Hence trying to compress it.' %FilePath)
-            zip_file = zipfile.ZipFile(FilePath, 'w')
+            new_path = FilePath+'.zip'
+            zip_file = zipfile.ZipFile(new_path, 'w')
             zip_file.write(FilePath, compress_type = zipfile.ZIP_DEFLATED)
             self.logger.info('After compression, the file size \
-                        becomes : %r.' %float(getsize(zip_file)))
-            zip_file.close()
-            return FilePath
+                        becomes : %r.' %float(getsize(new_path)))
+            new_path.close()
+            return new_path
         except Exception as compressing_error:
             self.logger.error('Got : %r while compressing : %r.'\
                             %(repr(compressing_error), FilePath))
